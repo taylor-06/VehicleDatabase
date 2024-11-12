@@ -8,6 +8,7 @@ namespace VehicleDatabse
 {
     internal class Vehicle
     {
+        public int vehicleNumber;
         public string registration;
         public string wheels;
         public double weight;
