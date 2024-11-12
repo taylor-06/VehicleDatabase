@@ -1,8 +1,9 @@
+using System.Linq;
+
 namespace VehicleDatabse
 {
     public partial class Form1 : Form
     {
-        Car car = new Car();
         Van van = new Van();
 
         List<Car> carsList = new List<Car>();
@@ -23,20 +24,46 @@ namespace VehicleDatabse
                     switch (vehicleSelect.SelectedItem)
                     {
                         case "Car 1":
-                            car = carsList.ElementAt(0);
-                            car.vehicleNumber = vehicleSelect.Items.IndexOf("Car 1");
-                            infoArea.Text = "Registration Number: " + car.registration + "\r\nWheels: " + car.wheels + "\r\nWeight (KG): " + car.weight + "\r\nPassengers: " + car.passengers;
-                            break;
+                            if (carsList.Count == 0)
+                            {
+                                infoArea.Text = "Car doesn't contain any data";
+                                break;
+                            }
+                            else
+                            {
+                                car = carsList.ElementAt(0);
+                                car.vehicleNumber = vehicleSelect.Items.IndexOf("Car 1");
+                                infoArea.Text = "Registration Number: " + car.registration + "\r\nWheels: " + car.wheels + "\r\nWeight (KG): " + car.weight + "\r\nPassengers: " + car.passengers;
+                                break;
+                            }
+
                         case "Car 2":
-                            car = carsList.ElementAt(1);
-                            car.vehicleNumber = vehicleSelect.Items.IndexOf("Car 2");
-                            infoArea.Text = "Registration Number: " + car.registration + "\r\nWheels: " + car.wheels + "\r\nWeight (KG): " + car.weight + "\r\nPassengers: " + car.passengers;
-                            break;
+                            if (carsList.Count != 2)
+                            {
+                                infoArea.Text = "Car doesn't contain any data";
+                                break;
+                            }
+                            else
+                            {
+                                car = carsList.ElementAt(1);
+                                car.vehicleNumber = vehicleSelect.Items.IndexOf("Car 2");
+                                infoArea.Text = "Registration Number: " + car.registration + "\r\nWheels: " + car.wheels + "\r\nWeight (KG): " + car.weight + "\r\nPassengers: " + car.passengers;
+                                break;
+                            }
+
                         case "Car 3":
-                            car = carsList.ElementAt(2);
-                            car.vehicleNumber = vehicleSelect.Items.IndexOf("Car 3");
-                            infoArea.Text = "Registration Number: " + car.registration + "\r\nWheels: " + car.wheels + "\r\nWeight (KG): " + car.weight + "\r\nPassengers: " + car.passengers;
-                            break;
+                            if (carsList.Count != 3)
+                            {
+                                break;
+                            }
+                            else
+                            {
+                                car = carsList.ElementAt(2);
+                                car.vehicleNumber = vehicleSelect.Items.IndexOf("Car 3");
+                                infoArea.Text = "Registration Number: " + car.registration + "\r\nWheels: " + car.wheels + "\r\nWeight (KG): " + car.weight + "\r\nPassengers: " + car.passengers;
+                                break;
+                            }
+
                         default:
                             infoArea.Text = "Error showing information";
                             break;
@@ -87,34 +114,6 @@ namespace VehicleDatabse
             {
                 infoArea.Text = "Error showing vehicles.";
             }
-
-            switch (car.vehicleNumber)
-            {
-                case 1:
-                    //vehicleSelect.Items.Equals("Car 1");
-                    //carsList.ElementAt(0);
-
-                    //carsList.ElementAt(0) == vehicleSelect.Items.IndexOf("Car 1")
-
-                    if (vehicleSelect.Items.Equals("Car 1")/* && car.vehicleNumber == vehicleSelect.Items.IndexOf("Car 1")*/)
-                    {
-                        car = carsList.ElementAt(0);
-                        Console.WriteLine(car.vehicleNumber);
-                        Console.WriteLine(carsList.ElementAt(0));
-                    }
-                    break;
-                case 2:
-                    if (vehicleSelect.Items.Equals("Car 2")/* && car.vehicleNumber == vehicleSelect.Items.IndexOf("Car 2")*/)
-                    {
-                        car = carsList.ElementAt(1);
-                        Console.WriteLine(car.vehicleNumber);
-                        Console.WriteLine(carsList.ElementAt(0));
-                    }
-                    break;
-                    //vehicleSelect.Items.Equals("Car 2");
-                    //carsList.ElementAt(1);
-                    // break;
-            }
         }
         private void addVehicleBtn_Click(object sender, EventArgs e)
         {
@@ -123,6 +122,8 @@ namespace VehicleDatabse
 
         private void AddVehicle()
         {
+            Car car = new Car();
+
             if (carVanAdd.SelectedItem == "Car")
             {
                 car.registration = regText.Text;
@@ -131,6 +132,19 @@ namespace VehicleDatabse
                 car.passengers = int.Parse(passengersText.Text);
                 car.vehicleNumber++;
                 carsList.Add(car);
+            }
+            else if (carVanAdd.SelectedItem == "Van")
+            {
+                van.registration = regText.Text;
+                van.wheels = wheelsText.Text;
+                van.weight = double.Parse(weightText.Text);
+                van.height = int.Parse(heightText.Text);
+                van.vehicleNumber++;
+                // add van to van list
+            }
+            else
+            {
+                infoArea.Text = "Error adding vehicle";
             }
         }
     }
