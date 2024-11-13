@@ -164,7 +164,6 @@ namespace VehicleDatabse
 
             if (carVanAdd.SelectedItem == "Car")
             {
-
                 if (string.IsNullOrEmpty(regText.Text)|| string.IsNullOrEmpty(wheelsText.Text) || string.IsNullOrEmpty(weightText.Text) || string.IsNullOrEmpty(passengersText.Text))
                 {
                     infoArea.Text = "Please enter all the required information";
@@ -214,21 +213,21 @@ namespace VehicleDatabse
                     case "Car 1":
                         carsList.ElementAt(0).registration = regEditRemove.Text;
                         carsList.ElementAt(0).wheels = wheelsEditRemove.Text;
-                        carsList.ElementAt(0).weight = Convert.ToDouble(wheelsEditRemove.Text);
+                        carsList.ElementAt(0).weight = Convert.ToDouble(weightEditRemove.Text);
                         carsList.ElementAt(0).passengers = Convert.ToInt32(passengersEditRemove.Text);
                         infoArea.Text = vehicleSelectEditRemove.SelectedItem.ToString() + " has been edited";
                         break;
                     case "Car 2":
                         carsList.ElementAt(1).registration = regEditRemove.Text;
                         carsList.ElementAt(1).wheels = wheelsEditRemove.Text;
-                        carsList.ElementAt(1).weight = Convert.ToDouble(wheelsEditRemove.Text);
+                        carsList.ElementAt(1).weight = Convert.ToDouble(weightEditRemove.Text);
                         carsList.ElementAt(1).passengers = Convert.ToInt32(passengersEditRemove.Text);
                         infoArea.Text = vehicleSelectEditRemove.SelectedItem.ToString() + " has been edited";
                         break;
                     case "Car 3":
                         carsList.ElementAt(2).registration = regEditRemove.Text;
                         carsList.ElementAt(2).wheels = wheelsEditRemove.Text;
-                        carsList.ElementAt(2).weight = Convert.ToDouble(wheelsEditRemove.Text);
+                        carsList.ElementAt(2).weight = Convert.ToDouble(weightEditRemove.Text);
                         carsList.ElementAt(2).passengers = Convert.ToInt32(passengersEditRemove.Text);
                         infoArea.Text = vehicleSelectEditRemove.SelectedItem.ToString() + " has been edited";
                         break;
@@ -241,21 +240,21 @@ namespace VehicleDatabse
                     case "Van 1":
                         vansList.ElementAt(0).registration = regEditRemove.Text;
                         vansList.ElementAt(0).wheels = wheelsEditRemove.Text;
-                        vansList.ElementAt(0).weight = Convert.ToDouble(wheelsEditRemove.Text);
+                        vansList.ElementAt(0).weight = Convert.ToDouble(weightEditRemove.Text);
                         vansList.ElementAt(0).height = Convert.ToDouble(heightEditRemove.Text);
                         infoArea.Text = vehicleSelectEditRemove.SelectedItem.ToString() + " has been edited";
                         break;
                     case "Van 2":
                         vansList.ElementAt(1).registration = regEditRemove.Text;
                         vansList.ElementAt(1).wheels = wheelsEditRemove.Text;
-                        vansList.ElementAt(1).weight = Convert.ToDouble(wheelsEditRemove.Text);
+                        vansList.ElementAt(1).weight = Convert.ToDouble(weightEditRemove.Text);
                         vansList.ElementAt(1).height = Convert.ToDouble(heightEditRemove.Text);
                         infoArea.Text = vehicleSelectEditRemove.SelectedItem.ToString() + " has been edited";
                         break;
                     case "Van 3":
                         vansList.ElementAt(2).registration = regEditRemove.Text;
                         vansList.ElementAt(2).wheels = wheelsEditRemove.Text;
-                        vansList.ElementAt(2).weight = Convert.ToDouble(wheelsEditRemove.Text);
+                        vansList.ElementAt(2).weight = Convert.ToDouble(weightEditRemove.Text);
                         vansList.ElementAt(2).height = Convert.ToDouble(heightEditRemove.Text);
                         infoArea.Text = vehicleSelectEditRemove.SelectedItem.ToString() + " has been edited";
                         break;
@@ -265,7 +264,84 @@ namespace VehicleDatabse
 
         private void removeVehicle_Click(object sender, EventArgs e)
         {
+            Car car = new Car();
+            Van van = new Van();
 
+            if (vehicleSelectEditRemove.Text == "")
+            {
+                infoArea.Text = "Select a vehicle to remove.";
+                return;
+            }
+            else
+            {
+                switch (carVanEditRemove.Text == "Car")
+                {
+                    case true:
+                        switch (vehicleSelectEditRemove.SelectedItem)
+                        {
+                            case "Car 1":
+                                car = carsList.ElementAt(0);
+                                carsList.Remove(carsList.ElementAt(0));
+                                regEditRemove.Text = string.Empty;
+                                wheelsEditRemove.Text = string.Empty;
+                                weightEditRemove.Text = null;
+                                passengersEditRemove.Text = null;
+                                infoArea.Text = "Removed a car from the database";
+                                break;
+                            case "Car 2":
+                                car = carsList.ElementAt(1);
+                                carsList.Remove(carsList.ElementAt(1));
+                                regEditRemove.Text = string.Empty;
+                                wheelsEditRemove.Text = string.Empty;
+                                weightEditRemove.Text = null;
+                                passengersEditRemove.Text = null;
+                                infoArea.Text = "Removed a car from the database";
+                                break;
+                            case "Car 3":
+                                car = carsList.ElementAt(2);
+                                carsList.Remove(carsList.ElementAt(2));
+                                regEditRemove.Text = string.Empty;
+                                wheelsEditRemove.Text = string.Empty;
+                                weightEditRemove.Text = null;
+                                passengersEditRemove.Text = null;
+                                infoArea.Text = "Removed a car from the database";
+                                break;
+                        }
+                        break;
+                    case false:
+                        switch (vehicleSelectEditRemove.SelectedItem)
+                        {
+                            case "Van 1":
+                                van = vansList.ElementAt(0);
+                                vansList.Remove(vansList.ElementAt(0));
+                                regEditRemove.Text = string.Empty;
+                                wheelsEditRemove.Text = string.Empty;
+                                weightEditRemove.Text = null;
+                                passengersEditRemove.Text = null;
+                                infoArea.Text = "Removed a car from the database";
+                                break;
+                            case "Van 2":
+                                van = vansList.ElementAt(1);
+                                vansList.Remove(vansList.ElementAt(1));
+                                regEditRemove.Text = string.Empty;
+                                wheelsEditRemove.Text = string.Empty;
+                                weightEditRemove.Text = null;
+                                passengersEditRemove.Text = null;
+                                infoArea.Text = "Removed a car from the database";
+                                break;
+                            case "Van 3":
+                                van = vansList.ElementAt(2);
+                                vansList.Remove(vansList.ElementAt(2));
+                                regEditRemove.Text = string.Empty;
+                                wheelsEditRemove.Text = string.Empty;
+                                weightEditRemove.Text = null;
+                                passengersEditRemove.Text = null;
+                                infoArea.Text = "Removed a car from the database";
+                                break;
+                        }
+                        break;
+                }
+            }
         }
 
         private void editRemoveSelectBtn_Click(object sender, EventArgs e)
@@ -307,6 +383,10 @@ namespace VehicleDatabse
                             if (carsList.Count == 0)
                             {
                                 infoArea.Text = "Car doesnt contain any data. Try adding data to this vehicle first instead";
+                                regEditRemove.Text = null;
+                                wheelsEditRemove.Text = null;
+                                weightEditRemove.Text = null;
+                                passengersEditRemove.Text = null;
                                 break;
                             }
                             else
@@ -319,9 +399,13 @@ namespace VehicleDatabse
                             }
 
                         case "Car 2":
-                            if (carsList.Count == 0)
+                            if (carsList.Count != 2)
                             {
                                 infoArea.Text = "Car doesnt contain any data. Try adding data to this vehicle first instead";
+                                regEditRemove.Text = null;
+                                wheelsEditRemove.Text = null;
+                                weightEditRemove.Text = null;
+                                passengersEditRemove.Text = null;
                                 break;
                             }
                             else
@@ -334,9 +418,13 @@ namespace VehicleDatabse
                             }
 
                         case "Car 3":
-                            if (carsList.Count == 0)
+                            if (carsList.Count != 3)
                             {
                                 infoArea.Text = "Car doesnt contain any data. Try adding data to this vehicle first instead";
+                                regEditRemove.Text = null;
+                                wheelsEditRemove.Text = null;
+                                weightEditRemove.Text = null;
+                                passengersEditRemove.Text = null;
                                 break;
                             }
                             else
@@ -357,6 +445,10 @@ namespace VehicleDatabse
                             if (vansList.Count == 0)
                             {
                                 infoArea.Text = "Van doesnt contain any data. Try adding data to this vehicle first instead";
+                                regEditRemove.Text = null;
+                                wheelsEditRemove.Text = null;
+                                weightEditRemove.Text = null;
+                                heightEditRemove.Text = null;   
                                 break;
                             }
                             else
@@ -369,9 +461,13 @@ namespace VehicleDatabse
                             }
 
                         case "Van 2":
-                            if (vansList.Count == 0)
+                            if (vansList.Count != 2)
                             {
                                 infoArea.Text = "Van doesnt contain any data. Try adding data to this vehicle first instead";
+                                regEditRemove.Text = null;
+                                wheelsEditRemove.Text = null;
+                                weightEditRemove.Text = null;
+                                heightEditRemove.Text = null;
                                 break;
                             }
                             else
@@ -384,9 +480,13 @@ namespace VehicleDatabse
                             }
 
                         case "Van 3":
-                            if (vansList.Count == 0)
+                            if (vansList.Count != 3)
                             {
                                 infoArea.Text = "Van doesnt contain any data. Try adding data to this vehicle first instead";
+                                regEditRemove.Text = null;
+                                wheelsEditRemove.Text = null;
+                                weightEditRemove.Text = null;
+                                heightEditRemove.Text = null;
                                 break;
                             }
                             else
