@@ -37,7 +37,7 @@ namespace VehicleDatabse
                             }
 
                         case "Car 2":
-                            if (carsList.Count != 2)
+                            if (carsList.Count < 2)
                             {
                                 infoArea.Text = "Car doesn't contain any data";
                                 break;
@@ -50,7 +50,7 @@ namespace VehicleDatabse
                             }
 
                         case "Car 3":
-                            if (carsList.Count != 3)
+                            if (carsList.Count < 3)
                             {
                                 infoArea.Text = "Car doesn't contain any data";
                                 break;
@@ -85,27 +85,27 @@ namespace VehicleDatabse
                             }
 
                         case "Van 2":
-                            if (vansList.Count != 2)
+                            if (vansList.Count < 2)
                             {
                                 infoArea.Text = "Van doesn't contain any data";
                                 break;
                             }
                             else
                             {
-                                van = vansList.ElementAt(0);
+                                van = vansList.ElementAt(1);
                                 van.vehicleNumber = vehicleSelect.Items.IndexOf("Van 2");
                                 infoArea.Text = "Registration Number: " + van.registration + "\r\nWheels: " + van.wheels + "\r\nWeight (KG): " + van.weight + "\r\nHeight: " + van.height;
                                 break;
                             }
                         case "Van 3":
-                            if (vansList.Count != 3)
+                            if (vansList.Count < 3)
                             {
                                 infoArea.Text = "Van doesn't contain any data";
                                 break;
                             }
                             else
                             {
-                                van = vansList.ElementAt(0);
+                                van = vansList.ElementAt(1);
                                 van.vehicleNumber = vehicleSelect.Items.IndexOf("Van 3");
                                 infoArea.Text = "Registration Number: " + van.registration + "\r\nWheels: " + van.wheels + "\r\nWeight (KG): " + van.weight + "\r\nHeight: " + van.height;
                                 break;
@@ -164,18 +164,18 @@ namespace VehicleDatabse
 
             if (carVanAdd.SelectedItem == "Car")
             {
-                if (string.IsNullOrEmpty(regText.Text)|| string.IsNullOrEmpty(wheelsText.Text) || string.IsNullOrEmpty(weightText.Text) || string.IsNullOrEmpty(passengersText.Text))
+                if (string.IsNullOrEmpty(regText.Text) || string.IsNullOrEmpty(wheelsText.Text) || string.IsNullOrEmpty(weightText.Text) || string.IsNullOrEmpty(passengersText.Text))
                 {
                     infoArea.Text = "Please enter all the required information";
                     return;
                 }
                 else
                 {
+                    carsList.Add(car);
                     car.registration = regText.Text;
                     car.wheels = wheelsText.Text;
                     car.weight = double.Parse(weightText.Text);
                     car.passengers = int.Parse(passengersText.Text);
-                    carsList.Add(car);
                     infoArea.Text = "Vehicle Information added to the Cars list";
                 }
             }
@@ -188,12 +188,12 @@ namespace VehicleDatabse
                 }
                 else
                 {
+                    vansList.Add(van);
                     van.registration = regText.Text;
                     van.wheels = wheelsText.Text;
                     van.weight = double.Parse(weightText.Text);
                     van.height = double.Parse(heightText.Text);
                     van.vehicleNumber++;
-                    vansList.Add(van);
                     infoArea.Text = "Vehicle Information added to the Vans list ";
                 }
             }
@@ -205,7 +205,6 @@ namespace VehicleDatabse
 
         private void editVehicleBtn_Click(object sender, EventArgs e)
         {
-            // add error check if theres no vehicles to edit from.
             if (carVanEditRemove.Text == "Car")
             {
                 switch (vehicleSelectEditRemove.SelectedItem)
@@ -448,7 +447,7 @@ namespace VehicleDatabse
                                 regEditRemove.Text = null;
                                 wheelsEditRemove.Text = null;
                                 weightEditRemove.Text = null;
-                                heightEditRemove.Text = null;   
+                                heightEditRemove.Text = null;
                                 break;
                             }
                             else
