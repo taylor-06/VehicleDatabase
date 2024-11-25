@@ -79,7 +79,6 @@ namespace VehicleDatabse
                             else
                             {
                                 van = vansList.ElementAt(0);
-                                //van.vehicleNumber = vehicleSelect.Items.IndexOf("Van 1");
                                 infoArea.Text = "Registration Number: " + van.registration + "\r\nWheels: " + van.wheels + "\r\nWeight (KG): " + van.weight + "\r\nHeight: " + van.height;
                                 break;
                             }
@@ -93,7 +92,6 @@ namespace VehicleDatabse
                             else
                             {
                                 van = vansList.ElementAt(1);
-                                //van.vehicleNumber = vehicleSelect.Items.IndexOf("Van 2");
                                 infoArea.Text = "Registration Number: " + van.registration + "\r\nWheels: " + van.wheels + "\r\nWeight (KG): " + van.weight + "\r\nHeight: " + van.height;
                                 break;
                             }
@@ -106,7 +104,6 @@ namespace VehicleDatabse
                             else
                             {
                                 van = vansList.ElementAt(1);
-                                //van.vehicleNumber = vehicleSelect.Items.IndexOf("Van 3");
                                 infoArea.Text = "Registration Number: " + van.registration + "\r\nWheels: " + van.wheels + "\r\nWeight (KG): " + van.weight + "\r\nHeight: " + van.height;
                                 break;
                             }
@@ -193,7 +190,6 @@ namespace VehicleDatabse
                     van.wheels = wheelsText.Text;
                     van.weight = double.Parse(weightText.Text);
                     van.height = double.Parse(heightText.Text);
-                   // van.vehicleNumber++;
                     infoArea.Text = "Vehicle Information added to the Vans list ";
                 }
             }

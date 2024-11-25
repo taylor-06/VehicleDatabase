@@ -28,459 +28,459 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.carVan = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.infoArea = new System.Windows.Forms.TextBox();
-            this.showInfo_btn = new System.Windows.Forms.Button();
-            this.selectA = new System.Windows.Forms.Label();
-            this.vehicleSelect = new System.Windows.Forms.ComboBox();
-            this.selectBtn = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.carVanAdd = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.regText = new System.Windows.Forms.TextBox();
-            this.wheelsText = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.weightText = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.passengersText = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.heightText = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.addVehicleBtn = new System.Windows.Forms.Button();
-            this.editVehicleBtn = new System.Windows.Forms.Button();
-            this.heightEditRemove = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.passengersEditRemove = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.weightEditRemove = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.wheelsEditRemove = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.regEditRemove = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.carVanEditRemove = new System.Windows.Forms.ComboBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.vehicleSelectEditRemove = new System.Windows.Forms.ComboBox();
-            this.removeVehicle = new System.Windows.Forms.Button();
-            this.editRemoveSelectBtn = new System.Windows.Forms.Button();
-            this.infoEditRemoveBtn = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            carVan = new ComboBox();
+            label1 = new Label();
+            infoArea = new TextBox();
+            showInfo_btn = new Button();
+            selectA = new Label();
+            vehicleSelect = new ComboBox();
+            selectBtn = new Button();
+            label2 = new Label();
+            label3 = new Label();
+            carVanAdd = new ComboBox();
+            label4 = new Label();
+            regText = new TextBox();
+            wheelsText = new TextBox();
+            label5 = new Label();
+            weightText = new TextBox();
+            label6 = new Label();
+            passengersText = new TextBox();
+            label7 = new Label();
+            heightText = new TextBox();
+            label8 = new Label();
+            addVehicleBtn = new Button();
+            editVehicleBtn = new Button();
+            heightEditRemove = new TextBox();
+            label9 = new Label();
+            passengersEditRemove = new TextBox();
+            label10 = new Label();
+            weightEditRemove = new TextBox();
+            label11 = new Label();
+            wheelsEditRemove = new TextBox();
+            label12 = new Label();
+            regEditRemove = new TextBox();
+            label13 = new Label();
+            label14 = new Label();
+            carVanEditRemove = new ComboBox();
+            label15 = new Label();
+            label16 = new Label();
+            vehicleSelectEditRemove = new ComboBox();
+            removeVehicle = new Button();
+            editRemoveSelectBtn = new Button();
+            infoEditRemoveBtn = new Button();
+            SuspendLayout();
             // 
             // carVan
             // 
-            this.carVan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.carVan.FormattingEnabled = true;
-            this.carVan.Items.AddRange(new object[] {
-            "Car",
-            "Van"});
-            this.carVan.Location = new System.Drawing.Point(106, 63);
-            this.carVan.Name = "carVan";
-            this.carVan.Size = new System.Drawing.Size(121, 23);
-            this.carVan.TabIndex = 0;
+            carVan.DropDownStyle = ComboBoxStyle.DropDownList;
+            carVan.FormattingEnabled = true;
+            carVan.Items.AddRange(new object[] { "Car", "Van" });
+            carVan.Location = new Point(106, 63);
+            carVan.Name = "carVan";
+            carVan.Size = new Size(121, 23);
+            carVan.TabIndex = 0;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(136, 45);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 15);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Car or Van?";
+            label1.AutoSize = true;
+            label1.Location = new Point(136, 45);
+            label1.Name = "label1";
+            label1.Size = new Size(66, 15);
+            label1.TabIndex = 1;
+            label1.Text = "Car or Van?";
             // 
             // infoArea
             // 
-            this.infoArea.Location = new System.Drawing.Point(55, 240);
-            this.infoArea.Multiline = true;
-            this.infoArea.Name = "infoArea";
-            this.infoArea.Size = new System.Drawing.Size(219, 163);
-            this.infoArea.TabIndex = 2;
+            infoArea.Location = new Point(55, 240);
+            infoArea.Multiline = true;
+            infoArea.Name = "infoArea";
+            infoArea.Size = new Size(219, 163);
+            infoArea.TabIndex = 2;
             // 
             // showInfo_btn
             // 
-            this.showInfo_btn.Location = new System.Drawing.Point(106, 187);
-            this.showInfo_btn.Name = "showInfo_btn";
-            this.showInfo_btn.Size = new System.Drawing.Size(121, 37);
-            this.showInfo_btn.TabIndex = 3;
-            this.showInfo_btn.Text = "Show Information";
-            this.showInfo_btn.UseVisualStyleBackColor = true;
+            showInfo_btn.Location = new Point(106, 187);
+            showInfo_btn.Name = "showInfo_btn";
+            showInfo_btn.Size = new Size(121, 37);
+            showInfo_btn.TabIndex = 3;
+            showInfo_btn.Text = "Show Information";
+            showInfo_btn.UseVisualStyleBackColor = true;
+            showInfo_btn.Click += showInfo_btn_Click;
             // 
             // selectA
             // 
-            this.selectA.AutoSize = true;
-            this.selectA.Location = new System.Drawing.Point(124, 140);
-            this.selectA.Name = "selectA";
-            this.selectA.Size = new System.Drawing.Size(87, 15);
-            this.selectA.TabIndex = 5;
-            this.selectA.Text = "Select a Vehicle";
+            selectA.AutoSize = true;
+            selectA.Location = new Point(124, 140);
+            selectA.Name = "selectA";
+            selectA.Size = new Size(87, 15);
+            selectA.TabIndex = 5;
+            selectA.Text = "Select a Vehicle";
             // 
             // vehicleSelect
             // 
-            this.vehicleSelect.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.vehicleSelect.FormattingEnabled = true;
-            this.vehicleSelect.Location = new System.Drawing.Point(106, 158);
-            this.vehicleSelect.MaxDropDownItems = 3;
-            this.vehicleSelect.Name = "vehicleSelect";
-            this.vehicleSelect.Size = new System.Drawing.Size(121, 23);
-            this.vehicleSelect.TabIndex = 4;
+            vehicleSelect.DropDownStyle = ComboBoxStyle.DropDownList;
+            vehicleSelect.FormattingEnabled = true;
+            vehicleSelect.Location = new Point(106, 158);
+            vehicleSelect.MaxDropDownItems = 3;
+            vehicleSelect.Name = "vehicleSelect";
+            vehicleSelect.Size = new Size(121, 23);
+            vehicleSelect.TabIndex = 4;
             // 
             // selectBtn
             // 
-            this.selectBtn.Location = new System.Drawing.Point(123, 92);
-            this.selectBtn.Name = "selectBtn";
-            this.selectBtn.Size = new System.Drawing.Size(93, 29);
-            this.selectBtn.TabIndex = 6;
-            this.selectBtn.Text = "Select";
-            this.selectBtn.UseVisualStyleBackColor = true;
+            selectBtn.Location = new Point(123, 92);
+            selectBtn.Name = "selectBtn";
+            selectBtn.Size = new Size(93, 29);
+            selectBtn.TabIndex = 6;
+            selectBtn.Text = "Select";
+            selectBtn.UseVisualStyleBackColor = true;
+            selectBtn.Click += selectBtn_Click;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(356, 40);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 15);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Add New Vehicles:";
+            label2.AutoSize = true;
+            label2.Location = new Point(356, 40);
+            label2.Name = "label2";
+            label2.Size = new Size(104, 15);
+            label2.TabIndex = 7;
+            label2.Text = "Add New Vehicles:";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(359, 68);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 15);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Car or Van?";
+            label3.AutoSize = true;
+            label3.Location = new Point(359, 68);
+            label3.Name = "label3";
+            label3.Size = new Size(66, 15);
+            label3.TabIndex = 9;
+            label3.Text = "Car or Van?";
             // 
             // carVanAdd
             // 
-            this.carVanAdd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.carVanAdd.FormattingEnabled = true;
-            this.carVanAdd.Items.AddRange(new object[] {
-            "Car",
-            "Van"});
-            this.carVanAdd.Location = new System.Drawing.Point(431, 65);
-            this.carVanAdd.Name = "carVanAdd";
-            this.carVanAdd.Size = new System.Drawing.Size(121, 23);
-            this.carVanAdd.TabIndex = 8;
+            carVanAdd.DropDownStyle = ComboBoxStyle.DropDownList;
+            carVanAdd.FormattingEnabled = true;
+            carVanAdd.Items.AddRange(new object[] { "Car", "Van" });
+            carVanAdd.Location = new Point(431, 65);
+            carVanAdd.Name = "carVanAdd";
+            carVanAdd.Size = new Size(121, 23);
+            carVanAdd.TabIndex = 8;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(359, 96);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(117, 15);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Registration Number";
+            label4.AutoSize = true;
+            label4.Location = new Point(359, 96);
+            label4.Name = "label4";
+            label4.Size = new Size(117, 15);
+            label4.TabIndex = 11;
+            label4.Text = "Registration Number";
             // 
             // regText
             // 
-            this.regText.Location = new System.Drawing.Point(482, 93);
-            this.regText.Multiline = true;
-            this.regText.Name = "regText";
-            this.regText.Size = new System.Drawing.Size(121, 23);
-            this.regText.TabIndex = 12;
+            regText.Location = new Point(482, 93);
+            regText.Multiline = true;
+            regText.Name = "regText";
+            regText.Size = new Size(121, 23);
+            regText.TabIndex = 12;
             // 
             // wheelsText
             // 
-            this.wheelsText.Location = new System.Drawing.Point(457, 122);
-            this.wheelsText.Multiline = true;
-            this.wheelsText.Name = "wheelsText";
-            this.wheelsText.Size = new System.Drawing.Size(121, 23);
-            this.wheelsText.TabIndex = 14;
+            wheelsText.Location = new Point(457, 122);
+            wheelsText.Multiline = true;
+            wheelsText.Name = "wheelsText";
+            wheelsText.Size = new Size(121, 23);
+            wheelsText.TabIndex = 14;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(359, 125);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(92, 15);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Wheels Number";
+            label5.AutoSize = true;
+            label5.Location = new Point(359, 125);
+            label5.Name = "label5";
+            label5.Size = new Size(92, 15);
+            label5.TabIndex = 13;
+            label5.Text = "Wheels Number";
             // 
             // weightText
             // 
-            this.weightText.Location = new System.Drawing.Point(435, 153);
-            this.weightText.Multiline = true;
-            this.weightText.Name = "weightText";
-            this.weightText.Size = new System.Drawing.Size(121, 23);
-            this.weightText.TabIndex = 16;
+            weightText.Location = new Point(435, 153);
+            weightText.Multiline = true;
+            weightText.Name = "weightText";
+            weightText.Size = new Size(121, 23);
+            weightText.TabIndex = 16;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(359, 156);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 15);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "Weight (KG)";
+            label6.AutoSize = true;
+            label6.Location = new Point(359, 156);
+            label6.Name = "label6";
+            label6.Size = new Size(70, 15);
+            label6.TabIndex = 15;
+            label6.Text = "Weight (KG)";
             // 
             // passengersText
             // 
-            this.passengersText.Location = new System.Drawing.Point(464, 182);
-            this.passengersText.Multiline = true;
-            this.passengersText.Name = "passengersText";
-            this.passengersText.Size = new System.Drawing.Size(121, 23);
-            this.passengersText.TabIndex = 18;
+            passengersText.Location = new Point(464, 182);
+            passengersText.Multiline = true;
+            passengersText.Name = "passengersText";
+            passengersText.Size = new Size(121, 23);
+            passengersText.TabIndex = 18;
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(359, 185);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(99, 15);
-            this.label7.TabIndex = 17;
-            this.label7.Text = "Passengers (Cars)";
+            label7.AutoSize = true;
+            label7.Location = new Point(359, 185);
+            label7.Name = "label7";
+            label7.Size = new Size(99, 15);
+            label7.TabIndex = 17;
+            label7.Text = "Passengers (Cars)";
             // 
             // heightText
             // 
-            this.heightText.Location = new System.Drawing.Point(443, 211);
-            this.heightText.Multiline = true;
-            this.heightText.Name = "heightText";
-            this.heightText.Size = new System.Drawing.Size(121, 23);
-            this.heightText.TabIndex = 20;
+            heightText.Location = new Point(443, 211);
+            heightText.Multiline = true;
+            heightText.Name = "heightText";
+            heightText.Size = new Size(121, 23);
+            heightText.TabIndex = 20;
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(359, 214);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(78, 15);
-            this.label8.TabIndex = 19;
-            this.label8.Text = "Height (Vans)";
+            label8.AutoSize = true;
+            label8.Location = new Point(359, 214);
+            label8.Name = "label8";
+            label8.Size = new Size(78, 15);
+            label8.TabIndex = 19;
+            label8.Text = "Height (Vans)";
             // 
             // addVehicleBtn
             // 
-            this.addVehicleBtn.Location = new System.Drawing.Point(359, 240);
-            this.addVehicleBtn.Name = "addVehicleBtn";
-            this.addVehicleBtn.Size = new System.Drawing.Size(121, 37);
-            this.addVehicleBtn.TabIndex = 21;
-            this.addVehicleBtn.Text = "Add Vehicle";
-            this.addVehicleBtn.UseVisualStyleBackColor = true;
+            addVehicleBtn.Location = new Point(359, 240);
+            addVehicleBtn.Name = "addVehicleBtn";
+            addVehicleBtn.Size = new Size(121, 37);
+            addVehicleBtn.TabIndex = 21;
+            addVehicleBtn.Text = "Add Vehicle";
+            addVehicleBtn.UseVisualStyleBackColor = true;
+            addVehicleBtn.Click += addVehicleBtn_Click;
             // 
             // editVehicleBtn
             // 
-            this.editVehicleBtn.Location = new System.Drawing.Point(673, 334);
-            this.editVehicleBtn.Name = "editVehicleBtn";
-            this.editVehicleBtn.Size = new System.Drawing.Size(121, 37);
-            this.editVehicleBtn.TabIndex = 35;
-            this.editVehicleBtn.Text = "Edit Vehicle";
-            this.editVehicleBtn.UseVisualStyleBackColor = true;
+            editVehicleBtn.Location = new Point(673, 334);
+            editVehicleBtn.Name = "editVehicleBtn";
+            editVehicleBtn.Size = new Size(121, 37);
+            editVehicleBtn.TabIndex = 35;
+            editVehicleBtn.Text = "Edit Vehicle";
+            editVehicleBtn.UseVisualStyleBackColor = true;
+            editVehicleBtn.Click += editVehicleBtn_Click;
             // 
             // heightEditRemove
             // 
-            this.heightEditRemove.Location = new System.Drawing.Point(757, 305);
-            this.heightEditRemove.Multiline = true;
-            this.heightEditRemove.Name = "heightEditRemove";
-            this.heightEditRemove.Size = new System.Drawing.Size(121, 23);
-            this.heightEditRemove.TabIndex = 34;
+            heightEditRemove.Location = new Point(757, 305);
+            heightEditRemove.Multiline = true;
+            heightEditRemove.Name = "heightEditRemove";
+            heightEditRemove.Size = new Size(121, 23);
+            heightEditRemove.TabIndex = 34;
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(673, 308);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(78, 15);
-            this.label9.TabIndex = 33;
-            this.label9.Text = "Height (Vans)";
+            label9.AutoSize = true;
+            label9.Location = new Point(673, 308);
+            label9.Name = "label9";
+            label9.Size = new Size(78, 15);
+            label9.TabIndex = 33;
+            label9.Text = "Height (Vans)";
             // 
             // passengersEditRemove
             // 
-            this.passengersEditRemove.Location = new System.Drawing.Point(778, 276);
-            this.passengersEditRemove.Multiline = true;
-            this.passengersEditRemove.Name = "passengersEditRemove";
-            this.passengersEditRemove.Size = new System.Drawing.Size(121, 23);
-            this.passengersEditRemove.TabIndex = 32;
+            passengersEditRemove.Location = new Point(778, 276);
+            passengersEditRemove.Multiline = true;
+            passengersEditRemove.Name = "passengersEditRemove";
+            passengersEditRemove.Size = new Size(121, 23);
+            passengersEditRemove.TabIndex = 32;
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(673, 279);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(99, 15);
-            this.label10.TabIndex = 31;
-            this.label10.Text = "Passengers (Cars)";
+            label10.AutoSize = true;
+            label10.Location = new Point(673, 279);
+            label10.Name = "label10";
+            label10.Size = new Size(99, 15);
+            label10.TabIndex = 31;
+            label10.Text = "Passengers (Cars)";
             // 
             // weightEditRemove
             // 
-            this.weightEditRemove.Location = new System.Drawing.Point(749, 247);
-            this.weightEditRemove.Multiline = true;
-            this.weightEditRemove.Name = "weightEditRemove";
-            this.weightEditRemove.Size = new System.Drawing.Size(121, 23);
-            this.weightEditRemove.TabIndex = 30;
+            weightEditRemove.Location = new Point(749, 247);
+            weightEditRemove.Multiline = true;
+            weightEditRemove.Name = "weightEditRemove";
+            weightEditRemove.Size = new Size(121, 23);
+            weightEditRemove.TabIndex = 30;
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(673, 250);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(70, 15);
-            this.label11.TabIndex = 29;
-            this.label11.Text = "Weight (KG)";
+            label11.AutoSize = true;
+            label11.Location = new Point(673, 250);
+            label11.Name = "label11";
+            label11.Size = new Size(70, 15);
+            label11.TabIndex = 29;
+            label11.Text = "Weight (KG)";
             // 
             // wheelsEditRemove
             // 
-            this.wheelsEditRemove.Location = new System.Drawing.Point(771, 216);
-            this.wheelsEditRemove.Multiline = true;
-            this.wheelsEditRemove.Name = "wheelsEditRemove";
-            this.wheelsEditRemove.Size = new System.Drawing.Size(121, 23);
-            this.wheelsEditRemove.TabIndex = 28;
+            wheelsEditRemove.Location = new Point(771, 216);
+            wheelsEditRemove.Multiline = true;
+            wheelsEditRemove.Name = "wheelsEditRemove";
+            wheelsEditRemove.Size = new Size(121, 23);
+            wheelsEditRemove.TabIndex = 28;
             // 
             // label12
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(673, 219);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(92, 15);
-            this.label12.TabIndex = 27;
-            this.label12.Text = "Wheels Number";
+            label12.AutoSize = true;
+            label12.Location = new Point(673, 219);
+            label12.Name = "label12";
+            label12.Size = new Size(92, 15);
+            label12.TabIndex = 27;
+            label12.Text = "Wheels Number";
             // 
             // regEditRemove
             // 
-            this.regEditRemove.Location = new System.Drawing.Point(796, 187);
-            this.regEditRemove.Multiline = true;
-            this.regEditRemove.Name = "regEditRemove";
-            this.regEditRemove.Size = new System.Drawing.Size(121, 23);
-            this.regEditRemove.TabIndex = 26;
+            regEditRemove.Location = new Point(796, 187);
+            regEditRemove.Multiline = true;
+            regEditRemove.Name = "regEditRemove";
+            regEditRemove.Size = new Size(121, 23);
+            regEditRemove.TabIndex = 26;
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(673, 190);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(117, 15);
-            this.label13.TabIndex = 25;
-            this.label13.Text = "Registration Number";
+            label13.AutoSize = true;
+            label13.Location = new Point(673, 190);
+            label13.Name = "label13";
+            label13.Size = new Size(117, 15);
+            label13.TabIndex = 25;
+            label13.Text = "Registration Number";
             // 
             // label14
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(673, 68);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(66, 15);
-            this.label14.TabIndex = 24;
-            this.label14.Text = "Car or Van?";
+            label14.AutoSize = true;
+            label14.Location = new Point(673, 68);
+            label14.Name = "label14";
+            label14.Size = new Size(66, 15);
+            label14.TabIndex = 24;
+            label14.Text = "Car or Van?";
             // 
             // carVanEditRemove
             // 
-            this.carVanEditRemove.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.carVanEditRemove.FormattingEnabled = true;
-            this.carVanEditRemove.Items.AddRange(new object[] {
-            "Car",
-            "Van"});
-            this.carVanEditRemove.Location = new System.Drawing.Point(745, 65);
-            this.carVanEditRemove.Name = "carVanEditRemove";
-            this.carVanEditRemove.Size = new System.Drawing.Size(121, 23);
-            this.carVanEditRemove.TabIndex = 23;
+            carVanEditRemove.DropDownStyle = ComboBoxStyle.DropDownList;
+            carVanEditRemove.FormattingEnabled = true;
+            carVanEditRemove.Items.AddRange(new object[] { "Car", "Van" });
+            carVanEditRemove.Location = new Point(745, 65);
+            carVanEditRemove.Name = "carVanEditRemove";
+            carVanEditRemove.Size = new Size(121, 23);
+            carVanEditRemove.TabIndex = 23;
             // 
             // label15
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(673, 40);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(135, 15);
-            this.label15.TabIndex = 22;
-            this.label15.Text = "Edit or Remove Vehicles:\r\n";
+            label15.AutoSize = true;
+            label15.Location = new Point(673, 40);
+            label15.Name = "label15";
+            label15.Size = new Size(135, 15);
+            label15.TabIndex = 22;
+            label15.Text = "Edit or Remove Vehicles:\r\n";
             // 
             // label16
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(678, 129);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(87, 15);
-            this.label16.TabIndex = 37;
-            this.label16.Text = "Select a Vehicle";
+            label16.AutoSize = true;
+            label16.Location = new Point(678, 129);
+            label16.Name = "label16";
+            label16.Size = new Size(87, 15);
+            label16.TabIndex = 37;
+            label16.Text = "Select a Vehicle";
             // 
             // vehicleSelectEditRemove
             // 
-            this.vehicleSelectEditRemove.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.vehicleSelectEditRemove.FormattingEnabled = true;
-            this.vehicleSelectEditRemove.Location = new System.Drawing.Point(771, 126);
-            this.vehicleSelectEditRemove.MaxDropDownItems = 3;
-            this.vehicleSelectEditRemove.Name = "vehicleSelectEditRemove";
-            this.vehicleSelectEditRemove.Size = new System.Drawing.Size(121, 23);
-            this.vehicleSelectEditRemove.TabIndex = 36;
+            vehicleSelectEditRemove.DropDownStyle = ComboBoxStyle.DropDownList;
+            vehicleSelectEditRemove.FormattingEnabled = true;
+            vehicleSelectEditRemove.Location = new Point(771, 126);
+            vehicleSelectEditRemove.MaxDropDownItems = 3;
+            vehicleSelectEditRemove.Name = "vehicleSelectEditRemove";
+            vehicleSelectEditRemove.Size = new Size(121, 23);
+            vehicleSelectEditRemove.TabIndex = 36;
             // 
             // removeVehicle
             // 
-            this.removeVehicle.Location = new System.Drawing.Point(800, 334);
-            this.removeVehicle.Name = "removeVehicle";
-            this.removeVehicle.Size = new System.Drawing.Size(121, 37);
-            this.removeVehicle.TabIndex = 38;
-            this.removeVehicle.Text = "Remove Vehicle";
-            this.removeVehicle.UseVisualStyleBackColor = true;
+            removeVehicle.Location = new Point(800, 334);
+            removeVehicle.Name = "removeVehicle";
+            removeVehicle.Size = new Size(121, 37);
+            removeVehicle.TabIndex = 38;
+            removeVehicle.Text = "Remove Vehicle";
+            removeVehicle.UseVisualStyleBackColor = true;
+            removeVehicle.Click += removeVehicle_Click;
             // 
             // editRemoveSelectBtn
             // 
-            this.editRemoveSelectBtn.Location = new System.Drawing.Point(718, 94);
-            this.editRemoveSelectBtn.Name = "editRemoveSelectBtn";
-            this.editRemoveSelectBtn.Size = new System.Drawing.Size(121, 22);
-            this.editRemoveSelectBtn.TabIndex = 39;
-            this.editRemoveSelectBtn.Text = "Select";
-            this.editRemoveSelectBtn.UseVisualStyleBackColor = true;
+            editRemoveSelectBtn.Location = new Point(718, 94);
+            editRemoveSelectBtn.Name = "editRemoveSelectBtn";
+            editRemoveSelectBtn.Size = new Size(121, 22);
+            editRemoveSelectBtn.TabIndex = 39;
+            editRemoveSelectBtn.Text = "Select";
+            editRemoveSelectBtn.UseVisualStyleBackColor = true;
+            editRemoveSelectBtn.Click += editRemoveSelectBtn_Click;
             // 
             // infoEditRemoveBtn
             // 
-            this.infoEditRemoveBtn.Location = new System.Drawing.Point(718, 154);
-            this.infoEditRemoveBtn.Name = "infoEditRemoveBtn";
-            this.infoEditRemoveBtn.Size = new System.Drawing.Size(121, 22);
-            this.infoEditRemoveBtn.TabIndex = 40;
-            this.infoEditRemoveBtn.Text = "Show Information";
-            this.infoEditRemoveBtn.UseVisualStyleBackColor = true;
+            infoEditRemoveBtn.Location = new Point(718, 154);
+            infoEditRemoveBtn.Name = "infoEditRemoveBtn";
+            infoEditRemoveBtn.Size = new Size(121, 22);
+            infoEditRemoveBtn.TabIndex = 40;
+            infoEditRemoveBtn.Text = "Show Information";
+            infoEditRemoveBtn.UseVisualStyleBackColor = true;
+            infoEditRemoveBtn.Click += infoEditRemoveBtn_Click;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(960, 450);
-            this.Controls.Add(this.infoEditRemoveBtn);
-            this.Controls.Add(this.editRemoveSelectBtn);
-            this.Controls.Add(this.removeVehicle);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.vehicleSelectEditRemove);
-            this.Controls.Add(this.editVehicleBtn);
-            this.Controls.Add(this.heightEditRemove);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.passengersEditRemove);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.weightEditRemove);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.wheelsEditRemove);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.regEditRemove);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.carVanEditRemove);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.addVehicleBtn);
-            this.Controls.Add(this.heightText);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.passengersText);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.weightText);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.wheelsText);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.regText);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.carVanAdd);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.selectBtn);
-            this.Controls.Add(this.selectA);
-            this.Controls.Add(this.vehicleSelect);
-            this.Controls.Add(this.showInfo_btn);
-            this.Controls.Add(this.infoArea);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.carVan);
-            this.MaximizeBox = false;
-            this.Name = "Form1";
-            this.Text = "Vehicle Database";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(960, 450);
+            Controls.Add(infoEditRemoveBtn);
+            Controls.Add(editRemoveSelectBtn);
+            Controls.Add(removeVehicle);
+            Controls.Add(label16);
+            Controls.Add(vehicleSelectEditRemove);
+            Controls.Add(editVehicleBtn);
+            Controls.Add(heightEditRemove);
+            Controls.Add(label9);
+            Controls.Add(passengersEditRemove);
+            Controls.Add(label10);
+            Controls.Add(weightEditRemove);
+            Controls.Add(label11);
+            Controls.Add(wheelsEditRemove);
+            Controls.Add(label12);
+            Controls.Add(regEditRemove);
+            Controls.Add(label13);
+            Controls.Add(label14);
+            Controls.Add(carVanEditRemove);
+            Controls.Add(label15);
+            Controls.Add(addVehicleBtn);
+            Controls.Add(heightText);
+            Controls.Add(label8);
+            Controls.Add(passengersText);
+            Controls.Add(label7);
+            Controls.Add(weightText);
+            Controls.Add(label6);
+            Controls.Add(wheelsText);
+            Controls.Add(label5);
+            Controls.Add(regText);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(carVanAdd);
+            Controls.Add(label2);
+            Controls.Add(selectBtn);
+            Controls.Add(selectA);
+            Controls.Add(vehicleSelect);
+            Controls.Add(showInfo_btn);
+            Controls.Add(infoArea);
+            Controls.Add(label1);
+            Controls.Add(carVan);
+            MaximizeBox = false;
+            Name = "Form1";
+            Text = "Vehicle Database";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
