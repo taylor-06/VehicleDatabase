@@ -353,8 +353,6 @@ namespace VehicleDatabse
                 vehicleSelectEditRemove.Items.Add("Car 1");
                 vehicleSelectEditRemove.Items.Add("Car 2");
                 vehicleSelectEditRemove.Items.Add("Car 3");
-
-                //vehicleSelectEditRemove.SelectedItem = carsList.ElementAt(0);
             }
             else if (carVanEditRemove.Text == "Van")
             {

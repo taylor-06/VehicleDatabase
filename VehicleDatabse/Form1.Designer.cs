@@ -68,6 +68,7 @@
             this.removeVehicle = new System.Windows.Forms.Button();
             this.editRemoveSelectBtn = new System.Windows.Forms.Button();
             this.infoEditRemoveBtn = new System.Windows.Forms.Button();
+            this.SuspendLayout();
             // 
             // carVan
             // 

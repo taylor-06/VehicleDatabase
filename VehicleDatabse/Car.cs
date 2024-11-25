@@ -9,9 +9,5 @@ namespace VehicleDatabse
     internal class Car : Vehicle
     {
         public int passengers;
-
-        public void VehicleInfo()
-        {
-        }
     }
 }

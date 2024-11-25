@@ -9,9 +9,5 @@ namespace VehicleDatabse
     internal class Van : Vehicle
     {
         public double height;
-
-        public void VehicleInfo()
-        {
-        }
     }
 }
