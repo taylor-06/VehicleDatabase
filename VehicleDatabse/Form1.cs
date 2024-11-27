@@ -312,7 +312,7 @@ namespace VehicleDatabse
                                 regEditRemove.Text = string.Empty;
                                 wheelsEditRemove.Text = string.Empty;
                                 weightEditRemove.Text = null;
-                                passengersEditRemove.Text = null;
+                                heightEditRemove.Text = null;
                                 infoArea.Text = "Removed a car from the database";
                                 break;
                             case "Van 2":
@@ -321,7 +321,7 @@ namespace VehicleDatabse
                                 regEditRemove.Text = string.Empty;
                                 wheelsEditRemove.Text = string.Empty;
                                 weightEditRemove.Text = null;
-                                passengersEditRemove.Text = null;
+                                heightEditRemove.Text = null;
                                 infoArea.Text = "Removed a car from the database";
                                 break;
                             case "Van 3":
@@ -330,7 +330,7 @@ namespace VehicleDatabse
                                 regEditRemove.Text = string.Empty;
                                 wheelsEditRemove.Text = string.Empty;
                                 weightEditRemove.Text = null;
-                                passengersEditRemove.Text = null;
+                                heightEditRemove.Text = null;
                                 infoArea.Text = "Removed a car from the database";
                                 break;
                         }
